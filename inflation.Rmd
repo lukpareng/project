@@ -70,3 +70,18 @@ inflation %>%
   geom_line(aes(date, value, color = name)) +
   NULL
 ```
+
+# use a function without loading the package:
+# package::function
+usethis::use_git_config(
+  user.name = "lukpareng", # <-- change to your name
+  user.email = "lukas.engel@unibas.ch", # <-- and your email
+  init.defaultBranch = "main") # <-- not necessary but kinder than 'master'
+
+usethis::use_git()
+
+theme_minimal() +
+  ylab("subjective inflation in %-points") +
+  labs(color = "") +
+  theme(legend.position = c(.1, .9)) +
+
