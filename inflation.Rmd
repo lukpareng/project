@@ -53,7 +53,7 @@ print("Hello World! Python here, do you miss R already?")
 
 First Header  | Second Header
 ------------- | -------------
-`r min(inflation$year)`  | `r min(inflation$expectation)`
+`r min(inflation$perception)`  | `r min(inflation$expectation)`
 `r max(inflation$year)`  | `r max(inflation$expectation)`
 
 The survey has run quarterly since `r min(inflation$year)`.
