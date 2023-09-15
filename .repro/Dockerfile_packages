@@ -1,0 +1,12 @@
+RUN install2.r --error --skipinstalled \ 
+  bookdown \ 
+  here \ 
+  lubridate \ 
+  patchwork \ 
+  qrcode \ 
+  showtext \ 
+  svglite \ 
+  tidyverse \ 
+  xaringanthemer
+RUN installGithub.r \ 
+  aaronpeikert/repro@fc7e884
